@@ -19,4 +19,10 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    goals: 'package'- task: AzureWebApp@1
+  inputs:
+    azureSubscription: '<Azure service connection>'
+    appType: webAppLinux
+    appName: 'java'
+    package: '$(System.DefaultWorkingDirectory)/**/*.war'
+    
