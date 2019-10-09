@@ -22,7 +22,7 @@ steps:
     goals: 'package'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: “Ansibleconnection”
+    azureSubscription: “cicd”
     appType: webAppLinux
     appName: “prodevans”
     package:  “$(System.DefaultWorkingDirectory)/**/*.war”
