@@ -22,7 +22,7 @@ steps:
     goals: 'package'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: “Pay-As-You-Go”
+    azureSubscription: “cicd”
     appType: webAppLinux
     appName: “isac”
     package: “$(System.DefaultWorkingDirectory)/**/*.war”
