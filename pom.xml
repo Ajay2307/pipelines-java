@@ -21,8 +21,14 @@
     <finalName>helloworld</finalName>
     <plugins>
       <plugin>
+        <groupId>com.microsoft.azure</groupId>
+        <artifactId>azure-webapp-maven-plugin</artifactId>
+        <version>1.7.0</version>       
+      </plugin> 
+      <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
+	 
         <version>0.8.2</version>
         <executions>
           <execution>
