@@ -64,5 +64,5 @@ stages:
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
-              appName: $(webAppName)
-              package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
+              appName: isac123
+              package: '/home/vsts/work/1/s/target/helloworld.war'
